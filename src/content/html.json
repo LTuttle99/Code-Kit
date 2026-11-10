@@ -1,0 +1,891 @@
+[
+  {
+    "id": "html-1",
+    "language": "HTML",
+    "title": "Heading",
+    "code": "<h1>{{text}}</h1>",
+    "description": "Give the page a clear primary heading.",
+    "category": "Text",
+    "region": "body",
+    "imports": [],
+    "fields": [
+      {
+        "key": "text",
+        "label": "Heading text",
+        "value": "Hello, world!",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Beginner",
+    "keywords": [
+      "heading",
+      "give",
+      "the",
+      "page",
+      "a",
+      "clear",
+      "primary",
+      "heading.",
+      "text"
+    ],
+    "explanation": "Give the page a clear primary heading.",
+    "usage": "Use this when you need to give the page a clear primary heading.",
+    "output": "Hello, world!",
+    "mistakes": [
+      "Use one primary h1 per page; choose heading levels by structure."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-2",
+    "language": "HTML",
+    "title": "Paragraph",
+    "code": "<p>{{text}}</p>",
+    "description": "Add a readable paragraph of text.",
+    "category": "Text",
+    "region": "body",
+    "imports": [],
+    "fields": [
+      {
+        "key": "text",
+        "label": "Paragraph text",
+        "value": "Something wonderful starts here.",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Beginner",
+    "keywords": [
+      "paragraph",
+      "add",
+      "a",
+      "readable",
+      "paragraph",
+      "of",
+      "text.",
+      "text"
+    ],
+    "explanation": "Add a readable paragraph of text.",
+    "usage": "Use this when you need to add a readable paragraph of text.",
+    "output": "Something wonderful starts here.",
+    "mistakes": ["Paragraphs cannot contain block elements such as div."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-3",
+    "language": "HTML",
+    "title": "Button",
+    "code": "<button type=\"button\">{{text}}</button>",
+    "description": "Create a button for a JavaScript action.",
+    "category": "Forms",
+    "region": "body",
+    "imports": [],
+    "fields": [
+      {
+        "key": "text",
+        "label": "Button text",
+        "value": "Click me",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Beginner",
+    "keywords": [
+      "button",
+      "create",
+      "a",
+      "button",
+      "for",
+      "a",
+      "javascript",
+      "action.",
+      "forms"
+    ],
+    "explanation": "Create a button for a JavaScript action.",
+    "usage": "Use this when you need to create a button for a JavaScript action.",
+    "output": "A button labeled \u201cClick me\u201d",
+    "mistakes": [
+      "A button inside a form defaults to submit unless type=\"button\" is set."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-4",
+    "language": "HTML",
+    "title": "Hyperlink",
+    "code": "<a href=\"{{url}}\">{{text}}</a>",
+    "description": "Link to another page or website.",
+    "category": "Text",
+    "region": "body",
+    "imports": [],
+    "fields": [
+      {
+        "key": "url",
+        "label": "Destination URL",
+        "value": "https://example.com",
+        "kind": "url",
+        "required": true
+      },
+      {
+        "key": "text",
+        "label": "Link text",
+        "value": "Visit website",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Beginner",
+    "keywords": [
+      "hyperlink",
+      "link",
+      "to",
+      "another",
+      "page",
+      "or",
+      "website.",
+      "text"
+    ],
+    "explanation": "Link to another page or website.",
+    "usage": "Use this when you need to link to another page or website.",
+    "output": null,
+    "mistakes": [
+      "Use meaningful link text and a real destination; avoid javascript: URLs."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-5",
+    "language": "HTML",
+    "title": "Image",
+    "code": "<img src=\"{{url}}\" alt=\"{{text}}\" width=\"640\" loading=\"lazy\">",
+    "description": "Show an image with accessible alternative text.",
+    "category": "Media",
+    "region": "body",
+    "imports": [],
+    "fields": [
+      {
+        "key": "url",
+        "label": "Image URL",
+        "value": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=640",
+        "kind": "url",
+        "required": true
+      },
+      {
+        "key": "text",
+        "label": "Describe the image",
+        "value": "Mountain landscape",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Beginner",
+    "keywords": [
+      "image",
+      "show",
+      "an",
+      "image",
+      "with",
+      "accessible",
+      "alternative",
+      "text.",
+      "media"
+    ],
+    "explanation": "Show an image with accessible alternative text.",
+    "usage": "Use this when you need to show an image with accessible alternative text.",
+    "output": null,
+    "mistakes": [
+      "Describe the image in alt; width alone does not guarantee the file exists."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-6",
+    "language": "HTML",
+    "title": "Unordered list",
+    "code": "<ul>\n  <li>First item</li>\n  <li>Second item</li>\n</ul>",
+    "description": "Group items whose order does not matter.",
+    "category": "Text",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "unordered",
+      "list",
+      "group",
+      "items",
+      "whose",
+      "order",
+      "does",
+      "not",
+      "matter.",
+      "text"
+    ],
+    "explanation": "Group items whose order does not matter.",
+    "usage": "Use this when you need to group items whose order does not matter.",
+    "output": "\u2022 First item\n\u2022 Second item",
+    "mistakes": ["List items must be children of ul."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-7",
+    "language": "HTML",
+    "title": "Ordered list",
+    "code": "<ol>\n  <li>Install the tools</li>\n  <li>Start building</li>\n</ol>",
+    "description": "Present a sequence of steps.",
+    "category": "Text",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "ordered",
+      "list",
+      "present",
+      "a",
+      "sequence",
+      "of",
+      "steps.",
+      "text"
+    ],
+    "explanation": "Present a sequence of steps.",
+    "usage": "Use this when you need to present a sequence of steps.",
+    "output": "1. Install the tools\n2. Start building",
+    "mistakes": [
+      "Use ol when sequence matters, not just to get numbered styling."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-8",
+    "language": "HTML",
+    "title": "Navigation",
+    "code": "<nav aria-label=\"Main navigation\">\n  <a href=\"#home\">Home</a>\n  <a href=\"#about\">About</a>\n</nav>",
+    "description": "Provide labeled navigation links.",
+    "category": "Structure",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "navigation",
+      "provide",
+      "labeled",
+      "navigation",
+      "links.",
+      "structure"
+    ],
+    "explanation": "Provide labeled navigation links.",
+    "usage": "Use this when you need to provide labeled navigation links.",
+    "output": null,
+    "mistakes": [
+      "Use a distinct aria-label if a page has multiple nav landmarks."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-9",
+    "language": "HTML",
+    "title": "Form",
+    "code": "<form action=\"/contact\" method=\"post\">\n  <label for=\"email\">Email</label>\n  <input id=\"email\" name=\"email\" type=\"email\" required>\n  <button type=\"submit\">Send</button>\n</form>",
+    "description": "Collect an email address for a server endpoint.",
+    "category": "Forms",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "form",
+      "collect",
+      "an",
+      "email",
+      "address",
+      "for",
+      "a",
+      "server",
+      "endpoint.",
+      "forms"
+    ],
+    "explanation": "Collect an email address for a server endpoint.",
+    "usage": "Use this when you need to collect an email address for a server endpoint.",
+    "output": "An email field and a Send button",
+    "mistakes": [
+      "The action URL needs a real server; this static app does not receive submissions."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-10",
+    "language": "HTML",
+    "title": "Text input",
+    "code": "<label for=\"name\">Name</label>\n<input id=\"name\" name=\"name\" autocomplete=\"name\">",
+    "description": "Associate a visible label with a text input.",
+    "category": "Forms",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "text",
+      "input",
+      "associate",
+      "a",
+      "visible",
+      "label",
+      "with",
+      "a",
+      "text",
+      "input.",
+      "forms"
+    ],
+    "explanation": "Associate a visible label with a text input.",
+    "usage": "Use this when you need to associate a visible label with a text input.",
+    "output": null,
+    "mistakes": ["The label for value must match the input id exactly."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-11",
+    "language": "HTML",
+    "title": "Table",
+    "code": "<table>\n  <caption>Course results</caption>\n  <thead><tr><th scope=\"col\">Course</th><th scope=\"col\">Score</th></tr></thead>\n  <tbody><tr><td>Web development</td><td>95</td></tr></tbody>\n</table>",
+    "description": "Display structured data with column headings.",
+    "category": "Data",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "table",
+      "display",
+      "structured",
+      "data",
+      "with",
+      "column",
+      "headings.",
+      "data"
+    ],
+    "explanation": "Display structured data with column headings.",
+    "usage": "Use this when you need to display structured data with column headings.",
+    "output": "Course             Score\nWeb development    95",
+    "mistakes": [
+      "Use th for headers, and add scope so column relationships are clear."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-12",
+    "language": "HTML",
+    "title": "Footer",
+    "code": "<footer><p>&copy; 2026 My Website</p></footer>",
+    "description": "Add a footer for copyright or contact details.",
+    "category": "Structure",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Beginner",
+    "keywords": [
+      "footer",
+      "add",
+      "a",
+      "footer",
+      "for",
+      "copyright",
+      "or",
+      "contact",
+      "details.",
+      "structure"
+    ],
+    "explanation": "Add a footer for copyright or contact details.",
+    "usage": "Use this when you need to add a footer for copyright or contact details.",
+    "output": null,
+    "mistakes": ["Use a real copyright owner and keep the year current."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-13",
+    "language": "HTML",
+    "title": "Stylesheet link",
+    "code": "<link rel=\"stylesheet\" href=\"{{file}}\">",
+    "description": "Load a separate CSS file from the document head.",
+    "category": "Setup",
+    "region": "head",
+    "imports": [],
+    "fields": [
+      {
+        "key": "file",
+        "label": "CSS filename",
+        "value": "styles.css",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "stylesheet",
+      "link",
+      "load",
+      "a",
+      "separate",
+      "css",
+      "file",
+      "from",
+      "the",
+      "document",
+      "head.",
+      "setup"
+    ],
+    "explanation": "Load a separate CSS file from the document head.",
+    "usage": "Use this when you need to load a separate CSS file from the document head.",
+    "output": null,
+    "mistakes": [
+      "The CSS path is relative to the HTML file, not the computer root."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-14",
+    "language": "HTML",
+    "title": "Script link",
+    "code": "<script src=\"{{file}}\" defer></script>",
+    "description": "Load a JavaScript file after the document is parsed.",
+    "category": "Setup",
+    "region": "head",
+    "imports": [],
+    "fields": [
+      {
+        "key": "file",
+        "label": "JavaScript filename",
+        "value": "script.js",
+        "kind": "text",
+        "required": true
+      }
+    ],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "script",
+      "link",
+      "load",
+      "a",
+      "javascript",
+      "file",
+      "after",
+      "the",
+      "document",
+      "is",
+      "parsed.",
+      "setup"
+    ],
+    "explanation": "Load a JavaScript file after the document is parsed.",
+    "usage": "Use this when you need to load a JavaScript file after the document is parsed.",
+    "output": null,
+    "mistakes": [
+      "The script path must exist; defer waits for parsing before execution."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-15",
+    "language": "HTML",
+    "title": "Section",
+    "code": "<section aria-labelledby=\"about-title\">\n  <h2 id=\"about-title\">About</h2>\n  <p>A little about this project.</p>\n</section>",
+    "description": "Group related content under a heading.",
+    "category": "Structure",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "section",
+      "group",
+      "related",
+      "content",
+      "under",
+      "a",
+      "heading.",
+      "structure"
+    ],
+    "explanation": "Group related content under a heading.",
+    "usage": "Use this when you need to group related content under a heading.",
+    "output": null,
+    "mistakes": ["aria-labelledby must match the section heading id."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-16",
+    "language": "HTML",
+    "title": "Article",
+    "code": "<article>\n  <h2>Latest update</h2>\n  <p>This story can stand on its own.</p>\n</article>",
+    "description": "Mark up self-contained content.",
+    "category": "Structure",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "article",
+      "mark",
+      "up",
+      "self-contained",
+      "content.",
+      "structure"
+    ],
+    "explanation": "Mark up self-contained content.",
+    "usage": "Use this when you need to mark up self-contained content.",
+    "output": null,
+    "mistakes": ["An article should make sense as self-contained content."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-17",
+    "language": "HTML",
+    "title": "Container",
+    "code": "<div class=\"container\">\n  <p>Content goes here.</p>\n</div>",
+    "description": "Group elements for layout or styling.",
+    "category": "Structure",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "container",
+      "group",
+      "elements",
+      "for",
+      "layout",
+      "or",
+      "styling.",
+      "structure"
+    ],
+    "explanation": "Group elements for layout or styling.",
+    "usage": "Use this when you need to group elements for layout or styling.",
+    "output": null,
+    "mistakes": [
+      "A div adds no meaning; prefer semantic elements when appropriate."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-18",
+    "language": "HTML",
+    "title": "Dropdown",
+    "code": "<label for=\"course\">Choose a course</label>\n<select id=\"course\" name=\"course\">\n  <option value=\"html\">HTML</option>\n  <option value=\"css\">CSS</option>\n</select>",
+    "description": "Let the user select from predefined options.",
+    "category": "Forms",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "dropdown",
+      "let",
+      "the",
+      "user",
+      "select",
+      "from",
+      "predefined",
+      "options.",
+      "forms"
+    ],
+    "explanation": "Let the user select from predefined options.",
+    "usage": "Use this when you need to let the user select from predefined options.",
+    "output": null,
+    "mistakes": [
+      "Each option needs a value that your form handler understands."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-19",
+    "language": "HTML",
+    "title": "Checkbox",
+    "code": "<label><input type=\"checkbox\" name=\"updates\"> Send me updates</label>",
+    "description": "Offer an independent on or off choice.",
+    "category": "Forms",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "checkbox",
+      "offer",
+      "an",
+      "independent",
+      "on",
+      "or",
+      "off",
+      "choice.",
+      "forms"
+    ],
+    "explanation": "Offer an independent on or off choice.",
+    "usage": "Use this when you need to offer an independent on or off choice.",
+    "output": null,
+    "mistakes": ["An unchecked checkbox is omitted from submitted form data."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-20",
+    "language": "HTML",
+    "title": "Text area",
+    "code": "<label for=\"message\">Message</label>\n<textarea id=\"message\" name=\"message\" rows=\"4\"></textarea>",
+    "description": "Accept multiple lines of text.",
+    "category": "Forms",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "text",
+      "area",
+      "accept",
+      "multiple",
+      "lines",
+      "of",
+      "text.",
+      "forms"
+    ],
+    "explanation": "Accept multiple lines of text.",
+    "usage": "Use this when you need to accept multiple lines of text.",
+    "output": null,
+    "mistakes": ["textarea text goes between tags, not in a value attribute."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-21",
+    "language": "HTML",
+    "title": "Video",
+    "code": "<video controls width=\"640\">\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <track kind=\"captions\" src=\"captions.vtt\" srclang=\"en\" label=\"English\" default>\n</video>",
+    "description": "Embed a video with controls and captions.",
+    "category": "Media",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "video",
+      "embed",
+      "a",
+      "video",
+      "with",
+      "controls",
+      "and",
+      "captions.",
+      "media"
+    ],
+    "explanation": "Embed a video with controls and captions.",
+    "usage": "Use this when you need to embed a video with controls and captions.",
+    "output": null,
+    "mistakes": [
+      "Provide captions and a real source file; autoplay is often blocked."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-22",
+    "language": "HTML",
+    "title": "Audio",
+    "code": "<audio controls src=\"audio.mp3\">Your browser cannot play this audio.</audio>",
+    "description": "Embed audio with playback controls.",
+    "category": "Media",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "audio",
+      "embed",
+      "audio",
+      "with",
+      "playback",
+      "controls.",
+      "media"
+    ],
+    "explanation": "Embed audio with playback controls.",
+    "usage": "Use this when you need to embed audio with playback controls.",
+    "output": null,
+    "mistakes": [
+      "The source must be a supported audio file; never rely on autoplay."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-23",
+    "language": "HTML",
+    "title": "Details disclosure",
+    "code": "<details>\n  <summary>How does this work?</summary>\n  <p>Click the summary to show or hide this answer.</p>\n</details>",
+    "description": "Create an accessible expandable section.",
+    "category": "Interaction",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "details",
+      "disclosure",
+      "create",
+      "an",
+      "accessible",
+      "expandable",
+      "section.",
+      "interaction"
+    ],
+    "explanation": "Create an accessible expandable section.",
+    "usage": "Use this when you need to create an accessible expandable section.",
+    "output": "How does this work?  \u25b8 (expand to reveal the answer)",
+    "mistakes": ["Keep the summary as the first child of details."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-24",
+    "language": "HTML",
+    "title": "Progress indicator",
+    "code": "<label for=\"progress\">Download progress</label>\n<progress id=\"progress\" value=\"70\" max=\"100\">70%</progress>",
+    "description": "Show the completion of a task.",
+    "category": "Data",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Intermediate",
+    "keywords": [
+      "progress",
+      "indicator",
+      "show",
+      "the",
+      "completion",
+      "of",
+      "a",
+      "task.",
+      "data"
+    ],
+    "explanation": "Show the completion of a task.",
+    "usage": "Use this when you need to show the completion of a task.",
+    "output": null,
+    "mistakes": ["value must stay between zero and max."],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-25",
+    "language": "HTML",
+    "title": "Responsive picture",
+    "code": "<picture>\n  <source media=\"(min-width: 800px)\" srcset=\"large.webp\">\n  <img src=\"small.webp\" alt=\"A forest path\" width=\"400\">\n</picture>",
+    "description": "Select an image source based on screen width.",
+    "category": "Media",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Advanced",
+    "keywords": [
+      "responsive",
+      "picture",
+      "select",
+      "an",
+      "image",
+      "source",
+      "based",
+      "on",
+      "screen",
+      "width.",
+      "media"
+    ],
+    "explanation": "Select an image source based on screen width.",
+    "usage": "Use this when you need to select an image source based on screen width.",
+    "output": null,
+    "mistakes": [
+      "Keep img as the fallback; source alone does not render an image."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-26",
+    "language": "HTML",
+    "title": "Skip navigation",
+    "code": "<a class=\"skip-link\" href=\"#main-content\">Skip to content</a>\n<main id=\"main-content\"><h2>Page content</h2></main>",
+    "description": "Let keyboard users skip repeated navigation.",
+    "category": "Accessibility",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Advanced",
+    "keywords": [
+      "skip",
+      "navigation",
+      "let",
+      "keyboard",
+      "users",
+      "skip",
+      "repeated",
+      "navigation.",
+      "accessibility"
+    ],
+    "explanation": "Let keyboard users skip repeated navigation.",
+    "usage": "Use this when you need to let keyboard users skip repeated navigation.",
+    "output": null,
+    "mistakes": [
+      "The target ID must exist and be unique; main should be the page's main landmark."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  },
+  {
+    "id": "html-27",
+    "language": "HTML",
+    "title": "Complete profile card",
+    "code": "<article class=\"profile\">\n  <img src=\"avatar.jpg\" alt=\"Portrait of Alex\" width=\"96\" height=\"96\">\n  <h2>Alex Morgan</h2>\n  <p>Student and curious developer.</p>\n  <a href=\"mailto:alex@example.com\">Say hello</a>\n</article>",
+    "description": "Build a semantic profile card with a contact link.",
+    "category": "Complete example",
+    "region": "body",
+    "imports": [],
+    "fields": [],
+    "difficulty": "Advanced",
+    "keywords": [
+      "complete",
+      "profile",
+      "card",
+      "build",
+      "a",
+      "semantic",
+      "profile",
+      "card",
+      "with",
+      "a",
+      "contact",
+      "link.",
+      "complete",
+      "example"
+    ],
+    "explanation": "Build a semantic profile card with a contact link.",
+    "usage": "Use this when you need to build a semantic profile card with a contact link.",
+    "output": "Alex Morgan\nStudent and curious developer.\nSay hello",
+    "mistakes": [
+      "Use a real avatar path and contact address before publishing."
+    ],
+    "requirements": [],
+    "compatibility": "HTML5"
+  }
+]
